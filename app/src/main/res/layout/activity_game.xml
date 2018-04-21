@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="sales.sayuri.com.nacdado.GameActivity"
+    >
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            style="@style/label_header_title"
+            android:text="@string/wins"/>
+
+        <TextView
+            android:id="@+id/tvWins"
+            style="@style/label_header"
+            android:text="0" />
+
+        <TextView
+            style="@style/label_header_title"
+            android:text="@string/draws"/>
+
+        <TextView
+            android:id="@+id/tvDraws"
+            style="@style/label_header"
+            android:text="0" />
+
+        <TextView
+            style="@style/label_header_title"
+            android:text="@string/loses"/>
+
+        <TextView
+            android:id="@+id/tvLoses"
+            style="@style/label_header"
+            android:text="0" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/header"
+        android:layout_above="@+id/btPlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/ivPlayer"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:layout_marginRight="32dp"
+            android:src="@drawable/dice_1" />
+
+        <ImageView
+            android:id="@+id/ivPC"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:src="@drawable/dice_1" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btPlay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/play"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>
